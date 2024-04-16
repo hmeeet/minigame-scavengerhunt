@@ -1,0 +1,49 @@
+
+
+
+
+
+.progress-container {
+  width: 80% !important; /* Full width of the screen */
+}
+
+.progress-bar {
+  height: 10px; /* Adjust height */
+}
+
+.progress-container {
+  width: calc(3 * 140px + 2 * 80px); /* Width based on your challenge items */
+  background-color: #323232; /* Slightly different shade for contrast */
+  margin: 20px auto; /* Centering the progress bar horizontally */
+  border-radius: 10px; /* Rounded corners */
+  position: relative; /* To position the vertical lines */
+  overflow: hidden; /* Ensures that the inner progress bar also has rounded ends */
+}
+
+.progress-bar {
+  width: 0%;  
+  height: 20px;
+  background-color: #34d55c;  
+  text-align: center; 
+  line-height: 20px; 
+  color: #CFCFCF; 
+  position: relative;
+}
+
+/* Add this for the vertical lines */
+.progress-container::before,
+.progress-container::after,
+.progress-container .vertical-line {
+content: "";
+position: absolute;
+top: 0;
+bottom: 0;
+width: 2px;
+background-color: #656565;
+z-index: 1;
+}
+
+.progress-container::before { left: 20%; }
+.progress-container::after { left: 40%; }
+.progress-container .vertical-line:nth-child(1) { left: 60%; }
+.progress-container .vertical-line:nth-child(2) { left: 80%; }
