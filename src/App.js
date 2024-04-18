@@ -142,7 +142,7 @@ function App() {
                                 />
                             </div>
                         }
-                        <h1>welcome to the hunt!</h1>
+                        <h1>minigame scavenger hunt</h1>
                     </div>
                     {renderCurrentLevel()}
                     <div className="progress-container">
