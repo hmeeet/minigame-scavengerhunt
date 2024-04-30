@@ -13,8 +13,8 @@
 }
 
 .option-box:hover, .option-box.selected {
-  border-color: #FFBE1A;
-  color: #FFBE1A;
+  border-color: hotpink; 
+  color: hotpink;
 }
 
 .option-input {

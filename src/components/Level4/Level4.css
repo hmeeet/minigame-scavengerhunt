@@ -1,0 +1,41 @@
+.card {
+        border: 2px solid #212121;
+        background-color: #CFCFCF;
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        padding: 10px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        font-size: 2rem; 
+        cursor: pointer;
+        width: 60px; 
+        height: 60px;
+    }
+
+    .description {
+        max-width: 40em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+        max-width: 280px;
+        margin: 20px auto;
+        justify-content: center;
+    }
+
+    .card:hover, .card.flipped {
+        border-color: #f092cd; 
+        background-color: #212121;
+        color: #f092cd; 
+      }
+       
+      .card.matched {
+        background-color: hotpink;
+        color: #212121;  
+      }
+  

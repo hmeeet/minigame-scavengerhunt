@@ -25,12 +25,12 @@
 }
 
 .box:hover {
-  border-color: #FFBE1A;
+  border-color: #f092cd;
   background-color: #212121;
 }
 
 .box.open {
-  background-color: #FFBE1A;
+  background-color: hotpink;
 }
 
 @media only screen and (max-width: 768px) {
